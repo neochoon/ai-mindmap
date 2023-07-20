@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Wife Request2 </title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 1500px}
@@ -15,6 +17,7 @@
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
+      weight: 100%;
     }
     
     /* Set black background color, white text and some padding */
@@ -36,11 +39,23 @@
 </head>
 <body>
 <header class="container-fluid">
-  <p>Footer Text</p>
+  <p>Ask question to ChatGPT</p>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Why the earth is not flat?">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
 </header>
 <div class="container-fluid">
   <div class="row content">
-    <div class="col-sm-3 sidenav">
+    <div class="col-sm-6 sidenav">
+      <h4><small>Mindmap playground</small></h4>
+      <iframe src="mindmap.html" width="100%" height="100%" style="border:none;"></iframe>
+      <!--
+      <div id="jsmind_container"></div>
       <h4>John's Blog</h4>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Home</a></li>
@@ -48,18 +63,11 @@
         <li><a href="#section3">Family</a></li>
         <li><a href="#section3">Photos</a></li>
       </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
+      -->
     </div>
 
-    <div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
+    <div class="col-sm-6">
+      <h4><small>Recent Queries</small></h4>
       <hr>
       <h2>I Love Food</h2>
       <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
@@ -118,7 +126,6 @@
     </div>
   </div>
 </div>
-
 
 </body>
 </html>
